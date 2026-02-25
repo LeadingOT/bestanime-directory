@@ -1,0 +1,36 @@
+{
+  "name": "Demon Slayer (Kimetsu no Yaiba)",
+  "slug": "demon-slayer",
+  "tagline": "A boy's journey to save his sister from demons",
+  "description": "Tanjiro Kamado becomes a demon slayer after his family is slaughtered by demons and his younger sister Nezuko is turned into one. Known for its breathtaking animation and emotional storytelling, Demon Slayer became a global phenomenon with record-breaking box office success.",
+  "category": "Shonen",
+  "subcategory": "Supernatural Action",
+  "url": "https://www.crunchyroll.com/series/GY5P48XEY",
+  "pricing": {
+    "model": "freemium",
+    "startingPrice": "$7.99/mo"
+  },
+  "features": [
+    "63+ episodes (4 seasons ongoing)",
+    "Theatrical movies included",
+    "Stunning Ufotable animation",
+    "English dub available",
+    "IMAX theater releases",
+    "Ongoing manga adaptation"
+  ],
+  "pros": [
+    "Absolutely stunning animation quality",
+    "Emotionally powerful story",
+    "Memorable characters and villains",
+    "Epic fight choreography",
+    "Beautiful soundtrack"
+  ],
+  "cons": [
+    "Some find Zenitsu annoying",
+    "Predictable shonen tropes at times",
+    "Slow start for some viewers"
+  ],
+  "rating": 4.8,
+  "lastUpdated": "2026-02-24",
+  "tags": ["shonen", "action", "supernatural", "ongoing", "2024", "beginner-friendly"]
+}

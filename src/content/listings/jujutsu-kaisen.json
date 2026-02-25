@@ -1,0 +1,36 @@
+{
+  "name": "Jujutsu Kaisen",
+  "slug": "jujutsu-kaisen",
+  "tagline": "A high schooler joins a secret society to fight curses",
+  "description": "Yuji Itadori eats a cursed finger to save his friends and becomes the host of the powerful curse Ryomen Sukuna. This modern shonen masterpiece features incredible fight animation, a complex power system, and a beloved cast of characters.",
+  "category": "Shonen",
+  "subcategory": "Supernatural Action",
+  "url": "https://www.crunchyroll.com/series/GRDV0019R",
+  "pricing": {
+    "model": "freemium",
+    "startingPrice": "$7.99/mo"
+  },
+  "features": [
+    "47+ episodes + movie (ongoing)",
+    "MAPPA top-tier animation",
+    "English dub available",
+    "Movie: Jujutsu Kaisen 0",
+    "Ongoing manga by Gege Akutami",
+    "Season 3 coming 2026"
+  ],
+  "pros": [
+    "Best-in-class fight animation",
+    "Complex and interesting power system",
+    "Great character dynamics",
+    "Doesn't waste time with filler",
+    "Subverts shonen expectations"
+  ],
+  "cons": [
+    "Can be hard to follow at times",
+    "Very dark themes and deaths",
+    "Production struggles in Season 2"
+  ],
+  "rating": 4.7,
+  "lastUpdated": "2026-02-24",
+  "tags": ["shonen", "action", "supernatural", "ongoing", "2024"]
+}

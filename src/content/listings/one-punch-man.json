@@ -1,0 +1,36 @@
+{
+  "name": "One Punch Man",
+  "slug": "one-punch-man",
+  "tagline": "A hero so strong he defeats every enemy with one punch",
+  "description": "Saitama is a hero who can defeat any opponent with a single punch, making his life boring. This parody of shonen tropes became a phenomenon with its incredible animation, comedy, and surprisingly deep themes about purpose and recognition.",
+  "category": "Action",
+  "subcategory": "Superhero Comedy",
+  "url": "https://www.crunchyroll.com/series/GYG753DZY",
+  "pricing": {
+    "model": "freemium",
+    "startingPrice": "$7.99/mo"
+  },
+  "features": [
+    "24 episodes (2 seasons, S3 coming 2026)",
+    "Madhouse (S1) & J.C.Staff (S2)",
+    "English dub available",
+    "Season 1 has legendary animation",
+    "Ongoing manga and webcomic",
+    "Season 3 announced for 2026"
+  ],
+  "pros": [
+    "Season 1 animation is phenomenal",
+    "Hilarious parody of shonen",
+    "Memorable side characters",
+    "Great action sequences",
+    "Accessible for beginners"
+  ],
+  "cons": [
+    "Season 2 animation drop",
+    "Saitama's power removes tension",
+    "Long wait between seasons"
+  ],
+  "rating": 4.7,
+  "lastUpdated": "2026-02-24",
+  "tags": ["action", "comedy", "superhero", "ongoing", "2026", "beginner-friendly"]
+}

@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ListingCard from '../../components/ListingCard.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const listings = await getCollection('listings');
+  // Extract years from tags (e.g., "2024", "2026", "2016")
+  const allTags = listings.flatMap(l => l.data.tags);
+  const years = [...new Set(allTags.filter(tag => /^\d{4}$/.test(tag)))];
+  
+  return years.map((year) => ({
+    params: { year },
+    props: {
+      year,
+      listings: listings.filter((l) => l.data.tags.includes(year)),
+    },
+  }));
+}
+
+const { year, listings } = Astro.props;
+const title = `Best Anime of ${year} | Top Rated Series & Movies`;
+const description = `Discover the best anime released or popular in ${year}. From top-rated series to hidden gems, see our curated list for ${year}.`;
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="mb-4">
+    <a href="/" class="text-blue-600 hover:underline">Home</a> &rsaquo; <span class="text-gray-500">{year} Anime</span>
+  </div>
+
+  <h1 class="text-3xl md:text-4xl font-bold mb-4">Best Anime of {year}</h1>
+  <p class="text-lg text-gray-700 mb-8">
+    Explore the top anime from <strong>{year}</strong>. This list includes series that aired, concluded, or remained highly relevant during this year.
+  </p>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {listings.map((listing: any) => (
+      <ListingCard {...listing.data} />
+    ))}
+  </div>
+</BaseLayout>

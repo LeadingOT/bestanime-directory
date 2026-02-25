@@ -1,0 +1,36 @@
+{
+  "name": "Fullmetal Alchemist: Brotherhood",
+  "slug": "fullmetal-alchemist",
+  "tagline": "Two brothers search for the Philosopher's Stone to restore their bodies",
+  "description": "After a failed attempt to bring their mother back to life using alchemy, Edward and Alphonse Elric embark on a journey to find the Philosopher's Stone. Often ranked as the #1 anime of all time, Brotherhood features perfect storytelling, world-building, and emotional depth.",
+  "category": "Shonen",
+  "subcategory": "Fantasy Adventure",
+  "url": "https://www.crunchyroll.com/series/GRGGPG93R",
+  "pricing": {
+    "model": "freemium",
+    "startingPrice": "$7.99/mo"
+  },
+  "features": [
+    "64 episodes (completed 2010)",
+    "Studio Bones production",
+    "Highly acclaimed English dub",
+    "Faithful manga adaptation",
+    "Complete story with satisfying ending",
+    "Available on multiple platforms"
+  ],
+  "pros": [
+    "Near-perfect storytelling",
+    "Every character is well-developed",
+    "Incredible world-building",
+    "Perfect ending that ties everything",
+    "Balances comedy, action, and drama"
+  ],
+  "cons": [
+    "First episodes assume prior knowledge",
+    "Some find it overhyped",
+    "Dated animation in early episodes"
+  ],
+  "rating": 4.9,
+  "lastUpdated": "2026-02-24",
+  "tags": ["shonen", "fantasy", "adventure", "completed", "classic", "must-watch"]
+}

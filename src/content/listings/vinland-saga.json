@@ -1,0 +1,36 @@
+{
+  "name": "Vinland Saga",
+  "slug": "vinland-saga",
+  "tagline": "A Viking epic about war, revenge, and redemption",
+  "description": "Young Thorfinn grew up listening to tales of Vinland, a paradise across the western sea. After his father's murder, he joins a Viking band seeking revenge. This historical epic explores themes of violence, pacifism, and what it means to be a true warrior.",
+  "category": "Seinen",
+  "subcategory": "Historical Action",
+  "url": "https://www.crunchyroll.com/series/G6X0KQ0G6",
+  "pricing": {
+    "model": "freemium",
+    "startingPrice": "$7.99/mo"
+  },
+  "features": [
+    "48 episodes (2 seasons complete)",
+    "MAPPA & Wit Studio production",
+    "English dub available",
+    "Historical Viking setting",
+    "Ongoing manga by same creator as Planetes",
+    "Season 3 in development"
+  ],
+  "pros": [
+    "Mature, thoughtful storytelling",
+    "Incredible character development arc",
+    "Historically researched setting",
+    "Beautiful animation and fight scenes",
+    "Explores themes of pacifism uniquely"
+  ],
+  "cons": [
+    "Slow pacing in Season 2",
+    "Tone shift between seasons",
+    "Some historical liberties taken"
+  ],
+  "rating": 4.8,
+  "lastUpdated": "2026-02-24",
+  "tags": ["seinen", "action", "historical", "drama", "ongoing", "2023"]
+}

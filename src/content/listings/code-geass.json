@@ -1,0 +1,37 @@
+{
+  "name": "Code Geass: Lelouch of the Rebellion",
+  "slug": "code-geass",
+  "tagline": "A strategic genius fights an empire with the power of mind control",
+  "description": "Exiled prince Lelouch gains the power of Geass, allowing him to command anyone to obey. He leads a rebellion against the Holy Britannian Empire using strategy and manipulation. This mecha thriller features incredible plot twists and one of anime's most iconic endings.",
+  "category": "Mecha",
+  "subcategory": "Strategic Thriller",
+  "url": "https://www.crunchyroll.com/series/GY2P9ED0Y",
+  "pricing": {
+    "model": "freemium",
+    "startingPrice": "$7.99/mo"
+  },
+  "features": [
+    "50 episodes (2 seasons complete)",
+    "Sunrise production",
+    "English dub available",
+    "Complete story with legendary ending",
+    "Multiple spinoff series",
+    "Recently got sequel films"
+  ],
+  "pros": [
+    "Brilliant strategic battles",
+    "One of the best endings in anime",
+    "Lelouch is an iconic protagonist",
+    "Constant plot twists",
+    "Perfect blend of mecha and politics"
+  ],
+  "cons": [
+    "Some melodrama and cheese",
+    "School episodes can drag",
+    "Animation quality varies",
+    "Fan service interrupts serious moments"
+  ],
+  "rating": 4.7,
+  "lastUpdated": "2026-02-24",
+  "tags": ["mecha", "thriller", "action", "completed", "classic", "must-watch"]
+}

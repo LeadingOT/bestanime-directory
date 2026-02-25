@@ -1,0 +1,36 @@
+{
+  "name": "Death Note",
+  "slug": "death-note",
+  "tagline": "A genius student obtains the power to kill with a notebook",
+  "description": "When high school student Light Yagami discovers a supernatural notebook that can kill anyone whose name is written in it, he decides to use it to rid the world of criminals. A cat-and-mouse thriller between Light and detective L became a gateway anime for millions.",
+  "category": "Thriller",
+  "subcategory": "Supernatural Mystery",
+  "url": "https://www.netflix.com/title/70204970",
+  "pricing": {
+    "model": "paid",
+    "startingPrice": "$6.99/mo"
+  },
+  "features": [
+    "37 episodes (completed 2007)",
+    "Madhouse production",
+    "English dub widely available",
+    "Live-action adaptations exist",
+    "Iconic soundtrack",
+    "Complete story"
+  ],
+  "pros": [
+    "Brilliant psychological battles",
+    "Incredible first half",
+    "Iconic characters (L, Light)",
+    "Perfect gateway anime",
+    "Mind games and strategy"
+  ],
+  "cons": [
+    "Weaker second half",
+    "Controversial ending",
+    "Some dated animation"
+  ],
+  "rating": 4.6,
+  "lastUpdated": "2026-02-24",
+  "tags": ["thriller", "psychological", "supernatural", "completed", "classic", "beginner-friendly"]
+}

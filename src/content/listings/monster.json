@@ -1,0 +1,37 @@
+{
+  "name": "Monster",
+  "slug": "monster",
+  "tagline": "A psychological thriller masterpiece about morality and evil",
+  "description": "Dr. Kenzo Tenma saves a young boy's life, only to discover years later that he saved a sociopathic killer. This psychological thriller is widely considered one of the greatest anime ever made, with mature themes and gripping suspense.",
+  "category": "Thriller",
+  "subcategory": "Psychological Mystery",
+  "url": "https://www.netflix.com/title/81231461",
+  "pricing": {
+    "model": "paid",
+    "startingPrice": "$6.99/mo"
+  },
+  "features": [
+    "74 episodes (completed masterpiece)",
+    "Madhouse production (2004)",
+    "Recently added to Netflix",
+    "Mature psychological thriller",
+    "Based on acclaimed manga",
+    "Adult-oriented storytelling"
+  ],
+  "pros": [
+    "One of the best written anime ever",
+    "Incredibly tense and gripping",
+    "Complex character psychology",
+    "Mature themes handled perfectly",
+    "No filler, every episode matters"
+  ],
+  "cons": [
+    "Slow-burn pacing",
+    "Dated animation style",
+    "Very long series commitment",
+    "Dark themes throughout"
+  ],
+  "rating": 4.9,
+  "lastUpdated": "2026-02-24",
+  "tags": ["thriller", "psychological", "mystery", "completed", "classic", "mature"]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Made in Abyss",
+  "slug": "made-in-abyss",
+  "tagline": "A deceptively dark adventure into an endless pit",
+  "description": "An orphan named Riko dreams of becoming a great cave raider like her mother and solving the mystery of the Abyss. Despite its cute art style, Made in Abyss is a brutally dark fantasy with stunning world-building and emotional gut-punches.",
+  "category": "Adventure",
+  "subcategory": "Dark Fantasy",
+  "url": "https://www.hidive.com/tv/made-in-abyss",
+  "pricing": {
+    "model": "paid",
+    "startingPrice": "$4.99/mo"
+  },
+  "features": [
+    "25 episodes + 2 movies (ongoing)",
+    "Kinema Citrus production",
+    "English dub available",
+    "Beautiful Kevin Penkin soundtrack",
+    "Ongoing manga source",
+    "Season 3 in production"
+  ],
+  "pros": [
+    "Incredible world-building",
+    "Emotionally devastating moments",
+    "Beautiful art and music",
+    "Unique and creative setting",
+    "Tackles dark themes fearlessly"
+  ],
+  "cons": [
+    "Extremely dark and disturbing at times",
+    "Cute art style is misleading",
+    "Some controversial scenes",
+    "Slow release schedule"
+  ],
+  "rating": 4.7,
+  "lastUpdated": "2026-02-24",
+  "tags": ["adventure", "dark-fantasy", "ongoing", "mature", "2022"]
+}

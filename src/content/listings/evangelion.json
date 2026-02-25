@@ -1,0 +1,37 @@
+{
+  "name": "Neon Genesis Evangelion",
+  "slug": "evangelion",
+  "tagline": "Teenagers pilot giant mechs against mysterious beings",
+  "description": "Shinji Ikari is recruited to pilot a giant bio-machine called an Eva to fight mysterious beings known as Angels. What begins as a mecha anime evolves into a psychological deconstruction of the genre and exploration of depression, trauma, and human connection.",
+  "category": "Mecha",
+  "subcategory": "Psychological Drama",
+  "url": "https://www.netflix.com/title/81033445",
+  "pricing": {
+    "model": "paid",
+    "startingPrice": "$6.99/mo"
+  },
+  "features": [
+    "26 episodes + movie (complete)",
+    "Gainax legendary production",
+    "New English dub on Netflix",
+    "Rebuild film series available",
+    "Culturally influential masterpiece",
+    "Complete with End of Evangelion"
+  ],
+  "pros": [
+    "Revolutionary and influential",
+    "Deep psychological themes",
+    "Iconic imagery and symbolism",
+    "Changed anime forever",
+    "Complex character studies"
+  ],
+  "cons": [
+    "Confusing and abstract ending",
+    "Very depressing themes",
+    "Requires multiple viewings",
+    "Production issues in later episodes"
+  ],
+  "rating": 4.7,
+  "lastUpdated": "2026-02-24",
+  "tags": ["mecha", "psychological", "drama", "completed", "classic", "must-watch"]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Chainsaw Man",
+  "slug": "chainsaw-man",
+  "tagline": "A boy with a chainsaw devil fights for a normal life",
+  "description": "Denji, a young man living in poverty, merges with his pet devil Pochita and becomes Chainsaw Man. This ultra-violent dark comedy by MAPPA became a cultural phenomenon with its subversive storytelling and cinematic animation.",
+  "category": "Shonen",
+  "subcategory": "Dark Action",
+  "url": "https://www.crunchyroll.com/series/GVDHX8QNW",
+  "pricing": {
+    "model": "freemium",
+    "startingPrice": "$7.99/mo"
+  },
+  "features": [
+    "12 episodes (Season 1, more coming)",
+    "MAPPA cinematic production",
+    "English dub available",
+    "Each episode has unique ending theme",
+    "Ongoing manga by Tatsuki Fujimoto",
+    "Season 2 in production (2026)"
+  ],
+  "pros": [
+    "Phenomenal MAPPA animation",
+    "Subverts shonen expectations",
+    "Incredibly creative action",
+    "Unique character dynamics",
+    "12 different ending songs"
+  ],
+  "cons": [
+    "Extremely violent and gory",
+    "Unconventional protagonist",
+    "Only 12 episodes so far",
+    "CGI chainsaw battles divisive"
+  ],
+  "rating": 4.6,
+  "lastUpdated": "2026-02-24",
+  "tags": ["shonen", "action", "dark-comedy", "ongoing", "2022", "mature"]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Parasyte: The Maxim",
+  "slug": "parasyte",
+  "tagline": "A boy and the alien parasite that failed to take over his brain",
+  "description": "When parasitic aliens invade Earth, high schooler Shinichi's right hand becomes infected instead of his brain, forcing them into an uneasy partnership. This psychological horror explores what it means to be human through body horror and existential questions.",
+  "category": "Horror",
+  "subcategory": "Sci-Fi Thriller",
+  "url": "https://www.crunchyroll.com/series/G6JQXP48R",
+  "pricing": {
+    "model": "freemium",
+    "startingPrice": "$7.99/mo"
+  },
+  "features": [
+    "24 episodes (completed 2015)",
+    "Madhouse production",
+    "English dub available",
+    "Modern adaptation of classic manga",
+    "Complete story",
+    "Live-action adaptations exist"
+  ],
+  "pros": [
+    "Gripping psychological horror",
+    "Explores humanity deeply",
+    "Great character development",
+    "Perfect pacing with no filler",
+    "Satisfying conclusion"
+  ],
+  "cons": [
+    "Graphic body horror",
+    "CGI can be rough",
+    "Divisive modernization choices",
+    "Electronic soundtrack polarizing"
+  ],
+  "rating": 4.6,
+  "lastUpdated": "2026-02-24",
+  "tags": ["horror", "sci-fi", "thriller", "completed", "2015", "psychological"]
+}

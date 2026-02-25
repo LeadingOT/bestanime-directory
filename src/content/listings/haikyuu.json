@@ -1,0 +1,36 @@
+{
+  "name": "Haikyu!!",
+  "slug": "haikyuu",
+  "tagline": "A short boy dreams of becoming a volleyball champion",
+  "description": "Shoyo Hinata, despite his short height, is determined to become a great volleyball player. This sports anime captures the passion, teamwork, and rivalry of high school volleyball with dynamic animation and lovable characters.",
+  "category": "Sports",
+  "subcategory": "Volleyball",
+  "url": "https://www.crunchyroll.com/series/GY8VM8MWY",
+  "pricing": {
+    "model": "freemium",
+    "startingPrice": "$7.99/mo"
+  },
+  "features": [
+    "85+ episodes (4 seasons + movies)",
+    "Production I.G animation",
+    "English dub available",
+    "Multiple theatrical films",
+    "Ongoing manga completed",
+    "Final movie series ongoing"
+  ],
+  "pros": [
+    "Makes volleyball incredibly hype",
+    "Fantastic character development",
+    "Every team feels important",
+    "Dynamic match choreography",
+    "Inspiring underdog story"
+  ],
+  "cons": [
+    "Very long series",
+    "Some matches drag",
+    "Power of friendship trope heavy"
+  ],
+  "rating": 4.7,
+  "lastUpdated": "2026-02-24",
+  "tags": ["sports", "volleyball", "shonen", "ongoing", "2024", "beginner-friendly"]
+}

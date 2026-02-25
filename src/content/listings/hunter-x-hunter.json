@@ -1,0 +1,37 @@
+{
+  "name": "Hunter x Hunter (2011)",
+  "slug": "hunter-x-hunter",
+  "tagline": "A boy searches for his father while becoming a Hunter",
+  "description": "Gon Freecss dreams of becoming a Hunter like his father. What starts as a coming-of-age adventure evolves into one of the most complex and mature shonen series, featuring an intricate power system and morally gray storytelling.",
+  "category": "Shonen",
+  "subcategory": "Adventure Fantasy",
+  "url": "https://www.crunchyroll.com/series/GY3VKX1MR",
+  "pricing": {
+    "model": "freemium",
+    "startingPrice": "$7.99/mo"
+  },
+  "features": [
+    "148 episodes (2011-2014 adaptation)",
+    "Madhouse production",
+    "English dub available",
+    "Chimera Ant arc masterpiece",
+    "Complex Nen power system",
+    "Manga on indefinite hiatus"
+  ],
+  "pros": [
+    "One of the best shonen ever made",
+    "Incredibly complex power system",
+    "Morally complex characters",
+    "Chimera Ant arc is legendary",
+    "Subverts shonen tropes constantly"
+  ],
+  "cons": [
+    "Ends without manga conclusion",
+    "Manga may never finish",
+    "Slower pacing in some arcs",
+    "Narrator-heavy in Chimera Ant"
+  ],
+  "rating": 4.9,
+  "lastUpdated": "2026-02-24",
+  "tags": ["shonen", "adventure", "fantasy", "completed", "classic", "must-watch"]
+}

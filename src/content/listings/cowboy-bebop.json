@@ -1,0 +1,36 @@
+{
+  "name": "Cowboy Bebop",
+  "slug": "cowboy-bebop",
+  "tagline": "Space cowboys hunting bounties across the solar system",
+  "description": "A ragtag crew of bounty hunters travel through space in 2071, each running from their past. This jazz-infused space western is considered one of the most influential anime of all time, with its episodic storytelling and unforgettable soundtrack.",
+  "category": "Seinen",
+  "subcategory": "Space Western",
+  "url": "https://www.crunchyroll.com/series/GYVNXMVP6",
+  "pricing": {
+    "model": "freemium",
+    "startingPrice": "$7.99/mo"
+  },
+  "features": [
+    "26 episodes + movie (completed 1999)",
+    "Sunrise production",
+    "Legendary English dub",
+    "Iconic Yoko Kanno soundtrack",
+    "Complete standalone story",
+    "Remastered in HD"
+  ],
+  "pros": [
+    "Timeless classic that aged perfectly",
+    "One of the best dubs ever made",
+    "Incredible jazz soundtrack",
+    "Episodic but with overarching plot",
+    "Perfect gateway anime"
+  ],
+  "cons": [
+    "Older animation style",
+    "Episodic structure not for everyone",
+    "Bittersweet ending"
+  ],
+  "rating": 4.8,
+  "lastUpdated": "2026-02-24",
+  "tags": ["seinen", "sci-fi", "action", "completed", "classic", "must-watch"]
+}

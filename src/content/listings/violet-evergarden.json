@@ -1,0 +1,36 @@
+{
+  "name": "Violet Evergarden",
+  "slug": "violet-evergarden",
+  "tagline": "A former soldier learns the meaning of 'I love you'",
+  "description": "After the war, Violet Evergarden becomes an Auto Memory Doll—a ghostwriter who helps people express their feelings. This visually stunning series explores love, loss, and finding humanity after trauma through Kyoto Animation's finest work.",
+  "category": "Drama",
+  "subcategory": "Historical Fantasy",
+  "url": "https://www.netflix.com/title/80182123",
+  "pricing": {
+    "model": "paid",
+    "startingPrice": "$6.99/mo"
+  },
+  "features": [
+    "13 episodes + OVA + 2 movies",
+    "Kyoto Animation masterwork",
+    "English dub available",
+    "Breathtaking visuals",
+    "Complete story arc",
+    "Multiple awards winner"
+  ],
+  "pros": [
+    "Some of the most beautiful animation ever",
+    "Emotionally powerful storytelling",
+    "Every episode can make you cry",
+    "Incredible attention to detail",
+    "Perfect ending in the movie"
+  ],
+  "cons": [
+    "Episodic structure initially",
+    "Can be emotionally exhausting",
+    "Slow pacing for some"
+  ],
+  "rating": 4.8,
+  "lastUpdated": "2026-02-24",
+  "tags": ["drama", "fantasy", "completed", "2020", "emotional", "must-watch"]
+}

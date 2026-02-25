@@ -1,0 +1,112 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ListingCard from '../components/ListingCard.astro';
+import { getCollection } from 'astro:content';
+
+const allListings = await getCollection('listings');
+// Get categories and years
+const categories = [...new Set(allListings.map((l) => l.data.category))].sort();
+const allTags = allListings.flatMap(l => l.data.tags);
+const years = [...new Set(allTags.filter(tag => /^\d{4}$/.test(tag)))].sort((a, b) => b.localeCompare(a));
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Best Anime Directory',
+  description: 'Find the best anime by genre and year. Reviews, ratings, and streaming info.',
+  url: Astro.url.origin,
+};
+---
+
+<BaseLayout
+  title="Best Anime Directory - Top Rated Anime by Genre & Year"
+  description="Your ultimate guide to the best anime series and movies. Browse by genre (Shonen, Seinen, Isekai), release year, or check out our curated lists and reviews."
+  schema={schema}
+>
+  <!-- Hero -->
+  <section class="text-center py-16 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl mb-12">
+    <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Find Your Next Favorite Anime</h1>
+    <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+      Discover top-rated series, hidden gems, and upcoming releases. Curated by fans, for fans.
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="/blog/best-anime-2026" class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition shadow-lg">
+        Best of 2026
+      </a>
+      <a href="/blog/anime-beginners-guide" class="px-6 py-3 bg-white text-gray-800 font-semibold rounded-lg border border-gray-200 hover:bg-gray-50 transition shadow-sm">
+        New to Anime?
+      </a>
+    </div>
+  </section>
+
+  <!-- Categories & Years -->
+  <section class="mb-16">
+    <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+      <span class="text-blue-600">Browse by Genre</span>
+    </h2>
+    <div class="flex flex-wrap gap-3 mb-8">
+      {categories.map((cat) => (
+        <a
+          href={`/category/${cat.toLowerCase().replace(/\s+/g, '-')}`}
+          class="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium hover:border-blue-500 hover:text-blue-600 transition-all shadow-sm"
+        >
+          {cat}
+        </a>
+      ))}
+    </div>
+
+    <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+      <span class="text-purple-600">Browse by Year</span>
+    </h2>
+    <div class="flex flex-wrap gap-3">
+      {years.map((year) => (
+        <a
+          href={`/year/${year}`}
+          class="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium hover:border-purple-500 hover:text-purple-600 transition-all shadow-sm"
+        >
+          {year}
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- Featured Content -->
+  <section class="mb-16">
+    <div class="flex justify-between items-end mb-8">
+      <h2 class="text-2xl font-bold">Featured Anime</h2>
+      <a href="/category/shonen" class="text-blue-600 hover:underline font-medium">View All &rarr;</a>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {allListings.slice(0, 6).map((listing) => (
+        <ListingCard {...listing.data} />
+      ))}
+    </div>
+  </section>
+
+  <!-- Latest Blog Posts -->
+  <section class="bg-gray-50 rounded-2xl p-8 mb-12">
+    <h2 class="text-2xl font-bold mb-6">Latest from the Blog</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <a href="/blog/best-anime-2026" class="block group bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100">
+        <h3 class="text-xl font-bold mb-2 group-hover:text-blue-600 transition">Best Anime to Watch in 2026</h3>
+        <p class="text-gray-600 mb-4">Discover the must-watch series and most anticipated releases for this year.</p>
+        <span class="text-blue-600 font-medium text-sm">Read Article &rarr;</span>
+      </a>
+      <a href="/blog/anime-beginners-guide" class="block group bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100">
+        <h3 class="text-xl font-bold mb-2 group-hover:text-blue-600 transition">Anime Beginner's Guide</h3>
+        <p class="text-gray-600 mb-4">New to anime? Start here with our curated recommendations for every taste.</p>
+        <span class="text-blue-600 font-medium text-sm">Read Article &rarr;</span>
+      </a>
+      <a href="/blog/anime-genres-explained" class="block group bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100">
+        <h3 class="text-xl font-bold mb-2 group-hover:text-blue-600 transition">Anime Genres Explained</h3>
+        <p class="text-gray-600 mb-4">Understand Shonen, Seinen, Isekai, and find your perfect genre match.</p>
+        <span class="text-blue-600 font-medium text-sm">Read Article &rarr;</span>
+      </a>
+      <a href="/blog/classic-vs-new-anime" class="block group bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100">
+        <h3 class="text-xl font-bold mb-2 group-hover:text-blue-600 transition">Classic vs New Anime</h3>
+        <p class="text-gray-600 mb-4">The great debate: Should you start with classics or jump into new releases?</p>
+        <span class="text-blue-600 font-medium text-sm">Read Article &rarr;</span>
+      </a>
+    </div>
+  </section>
+</BaseLayout>

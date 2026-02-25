@@ -1,0 +1,36 @@
+{
+  "name": "Steins;Gate",
+  "slug": "steins-gate",
+  "tagline": "Time travel thriller that changed anime forever",
+  "description": "A self-proclaimed mad scientist accidentally discovers time travel through a modified microwave, leading to dire consequences. Steins;Gate is widely regarded as one of the best time travel stories ever told, with perfect pacing, mind-bending plot twists, and emotional depth.",
+  "category": "Seinen",
+  "subcategory": "Sci-Fi Thriller",
+  "url": "https://www.crunchyroll.com/series/GYWE7W5GY",
+  "pricing": {
+    "model": "freemium",
+    "startingPrice": "$7.99/mo"
+  },
+  "features": [
+    "24 episodes + movie + sequel series",
+    "Completed masterpiece (2011)",
+    "English dub highly praised",
+    "Based on acclaimed visual novel",
+    "Multiple spinoffs available",
+    "4K remaster available"
+  ],
+  "pros": [
+    "Perfect plot with zero plot holes",
+    "Incredible character development",
+    "Masterful use of foreshadowing",
+    "Emotional payoff is unmatched",
+    "Scientifically grounded time travel"
+  ],
+  "cons": [
+    "First half is slow-paced",
+    "Science jargon may confuse some",
+    "Requires full attention to follow"
+  ],
+  "rating": 4.9,
+  "lastUpdated": "2026-02-24",
+  "tags": ["seinen", "sci-fi", "thriller", "completed", "classic", "must-watch"]
+}

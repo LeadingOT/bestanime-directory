@@ -1,0 +1,36 @@
+{
+  "name": "A Silent Voice (Koe no Katachi)",
+  "slug": "a-silent-voice",
+  "tagline": "A story of redemption, forgiveness, and finding your voice",
+  "description": "A young man seeks redemption after bullying a deaf girl in elementary school. Kyoto Animation's emotional masterpiece tackles themes of disability, suicide, redemption, and communication with incredible sensitivity and beauty.",
+  "category": "Drama",
+  "subcategory": "Coming-of-age",
+  "url": "https://www.netflix.com/title/80223051",
+  "pricing": {
+    "model": "paid",
+    "startingPrice": "$6.99/mo"
+  },
+  "features": [
+    "130-minute theatrical film",
+    "Kyoto Animation masterpiece (2016)",
+    "English dub available",
+    "Stunning visual storytelling",
+    "Complete standalone story",
+    "Available in multiple formats"
+  ],
+  "pros": [
+    "Emotionally devastating and beautiful",
+    "Handles disability respectfully",
+    "Gorgeous KyoAni animation",
+    "Deep character exploration",
+    "Powerful themes of redemption"
+  ],
+  "cons": [
+    "Heavy subject matter",
+    "Can be triggering (suicide themes)",
+    "Compressed from longer manga"
+  ],
+  "rating": 4.8,
+  "lastUpdated": "2026-02-24",
+  "tags": ["drama", "romance", "film", "2016", "emotional"]
+}

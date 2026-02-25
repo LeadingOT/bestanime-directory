@@ -1,0 +1,37 @@
+{
+  "name": "Solo Leveling",
+  "slug": "solo-leveling",
+  "tagline": "The world's weakest hunter becomes the strongest",
+  "description": "Sung Jinwoo, the weakest hunter, gains a mysterious leveling system after a near-death experience. This action powerhouse adapts the hugely popular Korean manhwa with stunning animation and hype-inducing power progression.",
+  "category": "Action",
+  "subcategory": "Fantasy LitRPG",
+  "url": "https://www.crunchyroll.com/series/GDKHZEJ3K",
+  "pricing": {
+    "model": "freemium",
+    "startingPrice": "$7.99/mo"
+  },
+  "features": [
+    "24+ episodes (2 seasons ongoing)",
+    "A-1 Pictures production",
+    "English dub available",
+    "Epic fight animation",
+    "Korean manhwa adaptation",
+    "Season 2 airing 2026"
+  ],
+  "pros": [
+    "Satisfying power progression",
+    "Incredible fight scenes",
+    "Hype moments galore",
+    "Faithful manhwa adaptation",
+    "Shadow army is badass"
+  ],
+  "cons": [
+    "Thin plot beyond power-ups",
+    "Side characters underdeveloped",
+    "Power creep issues",
+    "Can feel repetitive"
+  ],
+  "rating": 4.5,
+  "lastUpdated": "2026-02-24",
+  "tags": ["action", "fantasy", "manhwa", "ongoing", "2026", "litrpg"]
+}

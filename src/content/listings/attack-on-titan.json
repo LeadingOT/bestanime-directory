@@ -1,0 +1,36 @@
+{
+  "name": "Attack on Titan (Shingeki no Kyojin)",
+  "slug": "attack-on-titan",
+  "tagline": "Humanity's last stand against the Titans",
+  "description": "In a world where humanity lives inside cities surrounded by enormous walls due to the Titans, gigantic humanoid creatures who devour humans seemingly without reason, Eren Yeager vows to eliminate the Titans after one of them destroys his hometown and kills his mother. A dark fantasy masterpiece that redefined the shonen genre with its complex plot and moral ambiguity.",
+  "category": "Shonen",
+  "subcategory": "Dark Fantasy",
+  "url": "https://www.crunchyroll.com/series/GR751KNZY",
+  "pricing": {
+    "model": "freemium",
+    "startingPrice": "$7.99/mo"
+  },
+  "features": [
+    "87 episodes across 4 seasons",
+    "Concluded series (2013-2023)",
+    "Available with English dub",
+    "4K HDR on select platforms",
+    "Multiple streaming options",
+    "Manga adaptation complete"
+  ],
+  "pros": [
+    "Intricate plot with incredible twists",
+    "Top-tier animation by MAPPA/Wit Studio",
+    "Phenomenal soundtrack by Hiroyuki Sawano",
+    "Deep character development",
+    "Concluded with satisfying ending"
+  ],
+  "cons": [
+    "Slow pacing in middle seasons",
+    "Heavy themes may not suit all viewers",
+    "Complex plot requires attention"
+  ],
+  "rating": 4.9,
+  "lastUpdated": "2026-02-24",
+  "tags": ["shonen", "dark-fantasy", "action", "completed", "2023", "must-watch"]
+}
