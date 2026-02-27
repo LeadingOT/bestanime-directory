@@ -10,8 +10,7 @@ interface Props {
 }
 
 const { title, description, canonical, ogImage, schema } = Astro.props;
-const siteUrl = import.meta.env.SITE || 'https://bestanime.info';
-const gaId = import.meta.env.PUBLIC_GA_ID || 'G-4EQ6YREB7F';
+const siteUrl = import.meta.env.SITE || 'https://example.com';
 ---
 
 <!doctype html>
@@ -22,87 +21,71 @@ const gaId = import.meta.env.PUBLIC_GA_ID || 'G-4EQ6YREB7F';
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical || Astro.url.href} />
-
-    <!-- Open Graph -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical || Astro.url.href} />
-    <meta property="og:site_name" content="Best Anime Directory" />
     {ogImage && <meta property="og:image" content={ogImage} />}
-
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-
-    <!-- Schema.org JSON-LD -->
     {schema && (
       <script type="application/ld+json" set:html={JSON.stringify(schema)} />
     )}
-
-    <!-- Favicon -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8KF1B38B4"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-E8KF1B38B4');</script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
-    <!-- Google Analytics (GA4) -->
-    <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}></script>
-    <script define:vars={{ gaId }}>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', gaId);
-    </script>
-    
-    <!-- Google Search Console -->
-    <meta name="google-site-verification" content="YOUR_GSC_VERIFICATION_CODE" />
   </head>
-  <body class="bg-white text-gray-900 antialiased font-sans">
-    <nav class="border-b border-gray-200 bg-white sticky top-0 z-50 shadow-sm">
-      <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
-        <a href="/" class="text-xl font-bold flex items-center gap-2 text-blue-600" id="site-name">
-          <span class="text-2xl">📺</span> BestAnime.info
-        </a>
-        <div class="hidden md:flex gap-6 text-sm font-medium text-gray-600">
-          <a href="/" class="hover:text-blue-600 transition">Home</a>
-          <a href="/category/shonen" class="hover:text-blue-600 transition">Shonen</a>
-          <a href="/category/seinen" class="hover:text-blue-600 transition">Seinen</a>
-          <a href="/category/isekai" class="hover:text-blue-600 transition">Isekai</a>
-          <a href="/year/2026" class="hover:text-blue-600 transition">2026 Anime</a>
-        </div>
+  <body class="bg-gradient-to-br from-slate-50 to-blue-50 min-h-screen">
+    <header class="bg-white border-b border-blue-100 sticky top-0 z-50 backdrop-blur-sm bg-white/95">
+      <div class="mx-auto max-w-6xl px-4 py-4">
+        <nav class="flex items-center justify-between">
+          <a href="/" class="flex items-center gap-3 group">
+            <div class="bg-gradient-to-br from-blue-600 to-indigo-600 p-2.5 rounded-xl shadow-lg group-hover:shadow-xl transition-shadow">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h18M3 12h18M3 16h18" />
+              </svg>
+            </div>
+            <span class="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+              Best Anime Directory
+            </span>
+          </a>
+          <div class="flex gap-6 text-sm font-medium">
+            <a href="/" class="text-gray-600 hover:text-blue-600 transition-colors">Home</a>
+            <a href="/categories" class="text-gray-600 hover:text-blue-600 transition-colors">Categories</a>
+          </div>
+        </nav>
       </div>
-    </nav>
-
-    <main class="mx-auto max-w-6xl px-4 py-8 min-h-screen">
+    </header>
+    <main class="mx-auto max-w-6xl px-4 py-8">
       <slot />
     </main>
-
-    <footer class="border-t border-gray-200 bg-gray-50 mt-16">
+    <footer class="bg-gradient-to-r from-slate-900 to-slate-800 mt-16 text-white">
       <div class="mx-auto max-w-6xl px-4 py-12">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div class="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 class="font-bold mb-4 text-gray-900">Best Anime Directory</h3>
-            <p class="text-sm text-gray-500">Discover top-rated anime series and movies. Curated by fans, for fans.</p>
+            <h3 class="font-bold text-lg mb-4">Best Anime Directory</h3>
+            <p class="text-slate-300 text-sm">
+              Discover the best tools and resources in our curated directory.
+            </p>
           </div>
           <div>
-            <h3 class="font-bold mb-4 text-gray-900">Categories</h3>
-            <ul class="text-sm text-gray-500 space-y-2">
-              <li><a href="/category/action" class="hover:text-blue-600">Action Anime</a></li>
-              <li><a href="/category/romance" class="hover:text-blue-600">Romance Anime</a></li>
-              <li><a href="/category/slice-of-life" class="hover:text-blue-600">Slice of Life</a></li>
-              <li><a href="/category/thriller" class="hover:text-blue-600">Thriller/Mystery</a></li>
+            <h4 class="font-semibold mb-4">Quick Links</h4>
+            <ul class="space-y-2 text-sm text-slate-300">
+              <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
+              <li><a href="/categories" class="hover:text-white transition-colors">Categories</a></li>
             </ul>
           </div>
           <div>
-            <h3 class="font-bold mb-4 text-gray-900">Resources</h3>
-            <ul class="text-sm text-gray-500 space-y-2">
-              <li><a href="/blog/anime-beginners-guide" class="hover:text-blue-600">Beginner's Guide</a></li>
-              <li><a href="/blog/best-anime-2026" class="hover:text-blue-600">Best of 2026</a></li>
-              <li><a href="/sitemap-index.xml" class="hover:text-blue-600">Sitemap</a></li>
+            <h4 class="font-semibold mb-4">Resources</h4>
+            <ul class="space-y-2 text-sm text-slate-300">
+              <li><a href="/submit" class="hover:text-white transition-colors">Submit a Tool</a></li>
+              <li><a href="/about" class="hover:text-white transition-colors">About</a></li>
             </ul>
           </div>
         </div>
-        <div class="border-t border-gray-200 pt-8 text-sm text-center text-gray-500">
-          <p>&copy; {new Date().getFullYear()} BestAnime.info. All rights reserved.</p>
+        <div class="border-t border-slate-700 pt-8 text-center text-sm text-slate-400">
+          <p>&copy; {new Date().getFullYear()} Best Anime Directory. All rights reserved.</p>
         </div>
       </div>
     </footer>
