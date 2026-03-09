@@ -2,7 +2,7 @@
   "name": "Attack on Titan (Shingeki no Kyojin)",
   "slug": "attack-on-titan",
   "tagline": "Humanity's last stand against the Titans",
-  "description": "In a world where humanity lives inside cities surrounded by enormous walls due to the Titans, gigantic humanoid creatures who devour humans seemingly without reason, Eren Yeager vows to eliminate the Titans after one of them destroys his hometown and kills his mother. A dark fantasy masterpiece that redefined the shonen genre with its complex plot and moral ambiguity.",
+  "description": "Attack on Titan (Shingeki no Kyojin) is a dark fantasy manga and anime series that follows humanity's desperate struggle for survival. The story is set in a world where the last remnants of civilization live within three concentric walls, protecting them from the Titans—mindless, giant humanoids that devour people. The narrative centers on Eren Yeager, who, after a catastrophic Titan breach destroys his home and kills his mother, enlists in the military with his friends Mikasa and Armin. Their journey uncovers shocking truths about the Titans, their own history, and the world beyond the walls.\n\nKey features include its intricate, mystery-driven plot with meticulously foreshadowed revelations, morally ambiguous characters whose motivations constantly shift, and intense, strategic action sequences utilizing the Omni-Directional Mobility Gear. The series is known for its willingness to subvert expectations and tackle heavy themes of freedom, sacrifice, and the cycle of hatred.\n\nThis series is for mature shonen fans and viewers who appreciate complex world-building, political intrigue, and stories without clear-cut heroes or villains. The main benefit is a deeply engaging and thought-provoking narrative that rewards careful attention, with plot twists that recontextualize the entire story.\n\nA clear use case is for a viewer seeking a gripping, long-form story that evolves from a simple survival horror premise into a sweeping geopolitical and philosophical conflict. The freemium model allows you to start the series at no cost, with options to access the latest episodes, special editions, or merchandise.",
   "category": "Shonen",
   "subcategory": "Dark Fantasy",
   "url": "https://www.crunchyroll.com/series/GR751KNZY",
@@ -32,5 +32,12 @@
   ],
   "rating": 4.9,
   "lastUpdated": "2026-02-24",
-  "tags": ["shonen", "dark-fantasy", "action", "completed", "2023", "must-watch"]
+  "tags": [
+    "shonen",
+    "dark-fantasy",
+    "action",
+    "completed",
+    "2023",
+    "must-watch"
+  ]
 }

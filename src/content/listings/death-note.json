@@ -2,7 +2,7 @@
   "name": "Death Note",
   "slug": "death-note",
   "tagline": "A genius student obtains the power to kill with a notebook",
-  "description": "When high school student Light Yagami discovers a supernatural notebook that can kill anyone whose name is written in it, he decides to use it to rid the world of criminals. A cat-and-mouse thriller between Light and detective L became a gateway anime for millions.",
+  "description": "Death Note is a psychological thriller anime series centered on a supernatural notebook with a singular, lethal function: any person whose name is written within it will die. The story follows Light Yagami, a brilliant but disillusioned high school student who finds the notebook and embarks on a self-appointed mission to purge the world of criminals by using its power. His campaign of vigilante justice draws the attention of the enigmatic genius detective L, initiating a high-stakes battle of wits where each must uncover the other's identity while hiding their own.\n\nKey features include the intricate and strict rules of the Death Note itself, which create a complex framework for its use and limitations. The series is renowned for its intellectual cat-and-mouse narrative, driven by the strategic planning and deductions of both Light and L. Its morally ambiguous themes challenge viewers to consider concepts of justice, power, and corruption.\n\nThis series is ideal for viewers who enjoy suspenseful, plot-driven stories focused on strategy and psychological warfare over physical action. The main benefit is a deeply engaging and thought-provoking experience that maintains tension across its entire run. A clear use case is for a viewer seeking a thriller that functions as a cerebral puzzle; each episode advances the duel between protagonist and antagonist, rewarding close attention to detail and strategic foresight. Its accessible premise and tight narrative have made it a definitive entry point into anime for many.",
   "category": "Thriller",
   "subcategory": "Supernatural Mystery",
   "url": "https://www.netflix.com/title/70204970",
@@ -32,5 +32,12 @@
   ],
   "rating": 4.6,
   "lastUpdated": "2026-02-24",
-  "tags": ["thriller", "psychological", "supernatural", "completed", "classic", "beginner-friendly"]
+  "tags": [
+    "thriller",
+    "psychological",
+    "supernatural",
+    "completed",
+    "classic",
+    "beginner-friendly"
+  ]
 }
