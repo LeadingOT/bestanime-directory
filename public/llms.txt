@@ -1,0 +1,29 @@
+# Best Anime
+
+> Comprehensive directory of anime streaming sites and platforms
+
+## Categories
+
+- [Action Anime](/category/action-anime): High-energy action-packed series
+- [Romance Anime](/category/romance-anime): Love stories and romantic comedies
+- [Isekai Anime](/category/isekai-anime): Fantasy worlds and reincarnation
+- [Slice of Life](/category/slice-of-life): Everyday stories and drama
+- [Horror Anime](/category/horror-anime): Psychological and supernatural horror
+
+## Comparison Guides
+
+- [Best Free Anime Streaming Sites](/best/best-free-anime-streaming-sites)
+- [Best Anime for Beginners](/best/best-anime-for-beginners)
+- [Top Rated Anime Series 2026](/best/top-rated-anime-series-2026)
+
+## Key Facts
+
+- 20 tools reviewed and compared
+- 5 categories covering all types
+- 3 in-depth comparison guides
+- Updated March 2026
+- Independent reviews — not sponsored
+
+## Sitemap
+
+- [Sitemap](https://#{domain}/sitemap-index.xml)

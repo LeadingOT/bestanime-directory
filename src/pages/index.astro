@@ -16,12 +16,21 @@ const schema = {
   description: 'Find the best anime by genre and year. Reviews, ratings, and streaming info.',
   url: Astro.url.origin,
 };
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Best Anime Streaming Sites 2026",
+  "description": "Compare and review the top 20 tools in this category",
+  "numberOfItems": 20,
+  "url": "https://bestanime.info"
+};
 ---
 
 <BaseLayout
   title="Best Anime Directory - Top Rated Anime by Genre & Year"
   description="Your ultimate guide to the best anime series and movies. Browse by genre (Shonen, Seinen, Isekai), release year, or check out our curated lists and reviews."
-  schema={schema}
+  schema={itemListSchema}
 >
   <!-- Hero -->
   <section class="text-center py-16 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl mb-12">
