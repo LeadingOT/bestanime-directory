@@ -64,6 +64,38 @@ const gaId = import.meta.env.PUBLIC_GA_ID || 'G-4EQ6YREB7F';
 
     <!-- Google Search Console -->
     <meta name="google-site-verification" content="YOUR_GSC_VERIFICATION_CODE" />
+  
+    <!-- GEO Optimization: Organization Schema -->
+    <script type="application/ld+json">
+      {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Best Anime",
+  "url": "https://bestanime.info",
+  "description": "Comprehensive directory and comparison of tools on bestanime.info",
+  "logo": "https://bestanime.info/logo.png",
+  "sameAs": []
+}
+    </script>
+    
+    <!-- GEO Optimization: WebSite Schema -->
+    <script type="application/ld+json">
+      {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Best Anime",
+  "url": "https://bestanime.info",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://bestanime.info/search?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+    </script>
+  
   </head>
   <body class="bg-white text-gray-900 antialiased font-sans">
     <nav class="border-b border-gray-200 bg-white sticky top-0 z-50 shadow-sm">
