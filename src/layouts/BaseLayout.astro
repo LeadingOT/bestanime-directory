@@ -12,6 +12,7 @@ interface Props {
 
 const { title, description, canonical, ogImage, schema } = Astro.props;
 const siteUrl = import.meta.env.SITE || 'https://bestanime.info';
+const canonicalURL = canonical || new URL(Astro.url.pathname, siteUrl).href;
 const gaId = import.meta.env.PUBLIC_GA_ID || 'G-4EQ6YREB7F';
 ---
 
@@ -22,13 +23,13 @@ const gaId = import.meta.env.PUBLIC_GA_ID || 'G-4EQ6YREB7F';
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href={canonical || Astro.url.href} />
+    <link rel="canonical" href={canonicalURL} />
 
     <!-- Open Graph -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content={canonical || Astro.url.href} />
+    <meta property="og:url" content={canonicalURL} />
     <meta property="og:site_name" content="Best Anime Directory" />
     {ogImage && <meta property="og:image" content={ogImage} />}
 
