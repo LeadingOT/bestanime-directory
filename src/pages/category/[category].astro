@@ -3,6 +3,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import ListingCard from '../../components/ListingCard.astro';
 import { getCollection } from 'astro:content';
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const listings = await getCollection('listings');
   const categories = [...new Set(listings.map((l) => l.data.category))];
@@ -22,7 +24,6 @@ const currentYear = new Date().getFullYear();
 const title = `Best ${category} Anime to Watch in ${currentYear} | Top Rated & Popular`;
 const description = `Discover the best ${category} anime series and movies. Browse top-rated ${category} titles, read reviews, and find where to stream them. updated for ${currentYear}.`;
 ---
-export const prerender = true;
 
 
 <BaseLayout title={title} description={description}>

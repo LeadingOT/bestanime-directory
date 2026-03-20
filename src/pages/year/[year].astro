@@ -3,6 +3,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import ListingCard from '../../components/ListingCard.astro';
 import { getCollection } from 'astro:content';
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const listings = await getCollection('listings');
   // Extract years from tags (e.g., "2024", "2026", "2016")
@@ -22,7 +24,6 @@ const { year, listings } = Astro.props;
 const title = `Best Anime of ${year} | Top Rated Series & Movies`;
 const description = `Discover the best anime released or popular in ${year}. From top-rated series to hidden gems, see our curated list for ${year}.`;
 ---
-export const prerender = true;
 
 
 <BaseLayout title={title} description={description}>
