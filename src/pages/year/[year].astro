@@ -22,6 +22,8 @@ const { year, listings } = Astro.props;
 const title = `Best Anime of ${year} | Top Rated Series & Movies`;
 const description = `Discover the best anime released or popular in ${year}. From top-rated series to hidden gems, see our curated list for ${year}.`;
 ---
+export const prerender = true;
+
 
 <BaseLayout title={title} description={description}>
   <div class="mb-4">
