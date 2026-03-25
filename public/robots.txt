@@ -60,4 +60,4 @@ User-agent: ImagesiftBot
 Allow: /
 Disallow: /api/
 
-Sitemap: https://bestanime.info/sitemap.xml
+Sitemap: https://bestanime.info/sitemap-index.xml
