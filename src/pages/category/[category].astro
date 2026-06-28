@@ -5,10 +5,11 @@ import { getCollection } from 'astro:content';
 
 export const prerender = true;
 
+const siteUrl = import.meta.env.SITE || 'https://bestanime.info';
+
 export async function getStaticPaths() {
   const listings = await getCollection('listings');
   const categories = [...new Set(listings.map((l) => l.data.category))];
-  
   return categories.map((cat) => ({
     params: { category: cat.toLowerCase().replace(/\s+/g, '-') },
     props: {
@@ -19,34 +20,76 @@ export async function getStaticPaths() {
 }
 
 const { category, listings } = Astro.props;
-const currentYear = new Date().getFullYear();
+const categorySlug = category.toLowerCase().replace(/\s+/g, '-');
 
-const title = `Best ${category} Anime to Watch in ${currentYear} | Top Rated & Popular`;
-const description = `Discover the best ${category} anime series and movies. Browse top-rated ${category} titles, read reviews, and find where to stream them. updated for ${currentYear}.`;
+// Rating accessor tolerant of number | {overall} | missing (multi-schema safe)
+const rateOf = (x: any) => (typeof x?.rating === 'number' ? x.rating : (x?.rating?.overall ?? 0));
+const ranked = [...listings].sort((a: any, b: any) => rateOf(b.data) - rateOf(a.data));
+const top = ranked.slice(0, 3).map((l: any) => l.data.name);
+const leader = ranked[0]?.data;
+const leaderRate = leader ? rateOf(leader) : 0;
+
+// --- GEO answer-first summary ---
+const answer =
+  `The best ${category} sites include ${top.join(', ')}. ` +
+  `This guide compares ${listings.length} ${category.toLowerCase()} options side by side, ranked by rating and updated for 2026.` +
+  `${leader && leaderRate ? ` The highest-rated is ${leader.name} at ${leaderRate.toFixed(1)}/5.` : ''}`;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/` },
+        { '@type': 'ListItem', position: 2, name: 'Categories', item: `${siteUrl}/categories` },
+        { '@type': 'ListItem', position: 3, name: category },
+      ],
+    },
+    {
+      '@type': 'CollectionPage',
+      name: `Best ${category} sites`,
+      description: answer,
+      url: `${siteUrl}/category/${categorySlug}`,
+    },
+    {
+      '@type': 'ItemList',
+      name: `Best ${category} sites`,
+      numberOfItems: ranked.length,
+      itemListElement: ranked.map((l: any, i: number) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: l.data.name,
+        url: `${siteUrl}/listing/${l.data.slug}`,
+      })),
+    },
+  ],
+};
 ---
 
-
-<BaseLayout title={title} description={description}>
-  <div class="mb-4">
-    <a href="/" class="text-blue-600 hover:underline">Home</a> &rsaquo; <span class="text-gray-500">{category} Anime</span>
+<BaseLayout
+  title={`Best ${category} sites - Compare & Review (2026)`}
+  description={`Compare the best ${category} sites by rating, features, and pricing. ${listings.length} options reviewed and updated for 2026.`}
+  schema={schema}
+>
+  <div class="flex items-center gap-2 text-sm text-gray-500 mb-4">
+    <a href="/" class="hover:text-blue-600">Home</a>
+    <span>/</span>
+    <a href="/categories" class="hover:text-blue-600">Categories</a>
+    <span>/</span>
+    <span>{category}</span>
   </div>
 
-  <h1 class="text-3xl md:text-4xl font-bold mb-4">Best {category} Anime</h1>
-  <p class="text-lg text-gray-700 mb-8">
-    Explore our curated list of the best <strong>{category}</strong> anime. Whether you're looking for classic masterpieces or the latest hits, find the perfect series to watch next.
-    Showing {listings.length} titles.
-  </p>
+  <h1 class="text-3xl font-bold mb-3">Best {category} sites</h1>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    {listings.map((listing: any) => (
+  <!-- GEO answer-first summary -->
+  <section class="mb-8 bg-blue-50 border border-blue-100 rounded-lg p-5">
+    <p class="text-gray-800 leading-relaxed">{answer}</p>
+  </section>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    {ranked.map((listing: any) => (
       <ListingCard {...listing.data} />
     ))}
-  </div>
-  
-  <div class="mt-12 p-6 bg-gray-50 rounded-lg border border-gray-200">
-    <h2 class="text-xl font-bold mb-3">About {category} Anime</h2>
-    <p class="text-gray-600">
-      Looking for more recommendations? Check out our <a href="/blog/anime-genres-explained" class="text-blue-600 hover:underline">Genre Guide</a> to understand what makes {category} anime unique.
-    </p>
   </div>
 </BaseLayout>
