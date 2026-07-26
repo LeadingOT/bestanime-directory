@@ -6,7 +6,7 @@ import { getCollection } from 'astro:content';
 const allListings = await getCollection('listings');
 const filteredListings = allListings.filter(l => 
   l.data.category?.toLowerCase().includes('fantasy')
-).slice(0, 12);
+).sort((a, b) => { const rv = (x) => { const d = x && x.data ? x.data : x; const r = d ? d.rating : 0; return typeof r === 'number' ? r : (r && r.overall) || 0; }; return rv(b) - rv(a); }).slice(0, 12);
 
 const title = `Best Fantasy Anime 2026`;
 const description = `Discover the best fantasy anime in 2026. Compare features, pricing, and reviews to find the perfect option for your needs.`;
