@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import FAQSection from '../../components/FAQSection.astro';
 import { getCollection } from 'astro:content';
+import keepData from '../../data/alternatives-keep.json';
 
 export const prerender = true;
 
@@ -30,25 +31,14 @@ export async function getStaticPaths() {
 const { tool, alternatives } = Astro.props;
 const count = alternatives.length;
 
-// Dynamic title based on tool characteristics (CoS CTR optimization)
-const avgPrice = tool.pricing?.startingPrice ? parseInt(tool.pricing.startingPrice.replace(/[^0-9]/g, '')) : 0;
-const isExpensive = avgPrice > 100;
-const isPaid = tool.pricing?.model === 'paid';
+// data-honest title: no estimated-savings or ratings claims the page can't back
+const title = `${count} Best ${tool.name} Alternatives in 2026 (Compared)`;
 
-let title;
-if (isExpensive && avgPrice > 0) {
-  // Expensive tools → emphasize savings
-  const savings = Math.round(avgPrice * 0.3); // Estimate 30% savings
-  title = `${count} Cheaper ${tool.name} Alternatives (Save $${savings}+/mo) [2026]`;
-} else if (tool.rating >= 4.5) {
-  // High-rated tools → social proof
-  title = `${count} ${tool.name} Alternatives Rated 4.5+ Stars (Free & Paid)`;
-} else {
-  // Default → value + free anchor
-  title = `${count} Better ${tool.name} Alternatives (Free & Paid Options) 2026`;
-}
+const buildMonth = new Date().toLocaleString('en-US', { month: 'long', year: 'numeric' });
+const description = `Compare ${count} ${tool.name} alternatives on pricing, features, and editorial ratings — editors' analysis, updated ${buildMonth}. Find the best ${tool.category.toLowerCase()} fit →`;
 
-const description = `Compare ${count} top-rated ${tool.name} alternatives with pricing, features & real user reviews. Updated March 2026. Find the best ${tool.category.toLowerCase()} tool →`;
+// Option A (2026-07-28): only pages with real search demand stay indexed
+const indexable = keepData.keep.includes(tool.slug);
 
 // Schema.org with BreadcrumbList + ItemList (CoS CTR optimization)
 const schemas = [
@@ -84,11 +74,11 @@ const schemas = [
       '@type': 'ListItem',
       position: i + 1,
       item: {
-        '@type': 'SoftwareApplication',
+        '@type': 'CreativeWork',
         name: alt.name,
         description: alt.tagline,
         url: `https://bestanime.info/listing/${alt.slug}`,
-        applicationCategory: alt.category,
+        genre: alt.category,
       },
     })),
   }
@@ -103,15 +93,15 @@ const combinedSchema = {
 const faqs = [
   {
     question: `What are the best alternatives to ${tool.name}?`,
-    answer: `The top alternatives to ${tool.name} include ${alternatives.map((a) => a.name).join(', ')}. All are ${tool.category} tools with AI-powered features.`,
+    answer: `The top alternatives to ${tool.name} include ${alternatives.map((a) => a.name).join(', ')}. All are ${tool.category} titles listed in this directory.`,
   },
   {
-    question: `Is ${tool.name} the best ${tool.category} tool?`,
-    answer: `${tool.name} is a strong option rated ${tool.rating}/5, but the best choice depends on your needs. Compare features and pricing across all ${count + 1} tools in this category.`,
+    question: `Is ${tool.name} the best ${tool.category} anime?`,
+    answer: `${tool.name} is a strong option rated ${tool.rating}/5 by our editors, but the best choice depends on your taste. Compare features and pricing across all ${count + 1} titles in this category.`,
   },
   {
     question: `How do I choose a ${tool.name} alternative?`,
-    answer: `Consider your budget, team size, required integrations, and specific ${tool.category.toLowerCase()} needs. Compare the features table above to find the best fit.`,
+    answer: `Consider your streaming budget, preferred themes, and what drew you to ${tool.name} in the first place. Compare the features table above to find the best fit.`,
   },
 ];
 ---
@@ -122,6 +112,7 @@ const faqs = [
   description={description}
   schema={combinedSchema}
   canonical={`https://bestanime.info/alternatives/${tool.slug}`}
+  noindex={!indexable}
 >
   <article class="max-w-4xl">
     <!-- Breadcrumb -->
